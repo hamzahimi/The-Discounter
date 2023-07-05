@@ -6,3 +6,25 @@
 //
 
 import Foundation
+import Foundation
+import UIKit
+
+class SettingVC: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = appColor.PrimaryColor
+        inilization()
+        configueUI()
+        // Do any additional setup after loading the view.
+    }
+    func inilization(){
+        
+     
+    }
+    func configueUI(){
+           
+    }
+    
+
+}

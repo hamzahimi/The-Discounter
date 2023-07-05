@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import UIKit
+
+class GiftVC: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .green
+        inilization()
+        configueUI()
+        // Do any additional setup after loading the view.
+    }
+    func inilization(){
+        
+     
+    }
+    func configueUI(){
+           
+    }
+    
+
+}

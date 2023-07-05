@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BF9C67422A542245008CC131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67412A542245008CC131 /* AppDelegate.swift */; };
 		BF9C67442A542245008CC131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67432A542245008CC131 /* SceneDelegate.swift */; };
-		BF9C67462A542245008CC131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67452A542245008CC131 /* ViewController.swift */; };
 		BF9C67492A542245008CC131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9C67472A542245008CC131 /* Main.storyboard */; };
 		BF9C674B2A542246008CC131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9C674A2A542246008CC131 /* Assets.xcassets */; };
 		BF9C674E2A542246008CC131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9C674C2A542246008CC131 /* LaunchScreen.storyboard */; };
@@ -28,6 +27,17 @@
 		BF9C67932A546236008CC131 /* RedemptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67922A546236008CC131 /* RedemptionsVC.swift */; };
 		BF9C67962A5462A2008CC131 /* GiftsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67952A5462A2008CC131 /* GiftsVC.swift */; };
 		BF9C67992A5462CD008CC131 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C67982A5462CD008CC131 /* SettingVC.swift */; };
+		BFA54F4C2A557B71009FB460 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F4B2A557B71009FB460 /* MyProfileVC.swift */; };
+		BFA54F4F2A557B9E009FB460 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F4E2A557B9E009FB460 /* PreferencesVC.swift */; };
+		BFA54F522A557C3A009FB460 /* Support&Live chatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F512A557C3A009FB460 /* Support&Live chatVC.swift */; };
+		BFA54F552A557C58009FB460 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F542A557C58009FB460 /* FeedbackVC.swift */; };
+		BFA54F582A557C8E009FB460 /* Recommend an OutletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F572A557C8E009FB460 /* Recommend an OutletVC.swift */; };
+		BFA54F5B2A557CBE009FB460 /* Report an OutletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F5A2A557CBE009FB460 /* Report an OutletVC.swift */; };
+		BFA54F612A557D3F009FB460 /* About The AppVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F602A557D3F009FB460 /* About The AppVC.swift */; };
+		BFA54F632A557D50009FB460 /* Privacy Policy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F622A557D50009FB460 /* Privacy Policy.swift */; };
+		BFA54F652A557D64009FB460 /* Terms of Use.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F642A557D64009FB460 /* Terms of Use.swift */; };
+		BFA54F682A55A787009FB460 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F672A55A787009FB460 /* TabbarVC.swift */; };
+		BFA54F6A2A55B827009FB460 /* UIController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA54F692A55B827009FB460 /* UIController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +61,6 @@
 		BF9C673E2A542245008CC131 /* discounter-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "discounter-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9C67412A542245008CC131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF9C67432A542245008CC131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF9C67452A542245008CC131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF9C67482A542245008CC131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF9C674A2A542246008CC131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF9C674D2A542246008CC131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +82,17 @@
 		BF9C67922A546236008CC131 /* RedemptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionsVC.swift; sourceTree = "<group>"; };
 		BF9C67952A5462A2008CC131 /* GiftsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsVC.swift; sourceTree = "<group>"; };
 		BF9C67982A5462CD008CC131 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		BFA54F4B2A557B71009FB460 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		BFA54F4E2A557B9E009FB460 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		BFA54F512A557C3A009FB460 /* Support&Live chatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Support&Live chatVC.swift"; sourceTree = "<group>"; };
+		BFA54F542A557C58009FB460 /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
+		BFA54F572A557C8E009FB460 /* Recommend an OutletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recommend an OutletVC.swift"; sourceTree = "<group>"; };
+		BFA54F5A2A557CBE009FB460 /* Report an OutletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report an OutletVC.swift"; sourceTree = "<group>"; };
+		BFA54F602A557D3F009FB460 /* About The AppVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "About The AppVC.swift"; sourceTree = "<group>"; };
+		BFA54F622A557D50009FB460 /* Privacy Policy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Privacy Policy.swift"; sourceTree = "<group>"; };
+		BFA54F642A557D64009FB460 /* Terms of Use.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms of Use.swift"; sourceTree = "<group>"; };
+		BFA54F672A55A787009FB460 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		BFA54F692A55B827009FB460 /* UIController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +181,7 @@
 		BF9C67742A5422A0008CC131 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF9C67452A542245008CC131 /* ViewController.swift */,
+				BFA54F662A55A776009FB460 /* TabBar */,
 				BF9C678E2A5461CA008CC131 /* Splash */,
 				BF9C67882A54616E008CC131 /* Home */,
 				BF9C678B2A546197008CC131 /* Favourites */,
@@ -207,6 +227,7 @@
 				BF9C67822A5460D7008CC131 /* UITextField+Extension.swift */,
 				BF9C67842A546101008CC131 /* UILabel+Extension.swift */,
 				BF9C67862A546114008CC131 /* UIImage+Extension.swift */,
+				BFA54F692A55B827009FB460 /* UIController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +277,12 @@
 			children = (
 				BF9C67982A5462CD008CC131 /* SettingVC.swift */,
 				BF9C679A2A5468E4008CC131 /* MyProfile */,
+				BFA54F4D2A557B80009FB460 /* Preferences */,
+				BFA54F502A557C09009FB460 /* Support&Live chat */,
+				BFA54F532A557C46009FB460 /* Feedback */,
+				BFA54F562A557C5E009FB460 /* Recommend an Outlet */,
+				BFA54F592A557CA0009FB460 /* Report an Outlet */,
+				BFA54F5C2A557CC8009FB460 /* About */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -263,8 +290,91 @@
 		BF9C679A2A5468E4008CC131 /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
+				BFA54F4B2A557B71009FB460 /* MyProfileVC.swift */,
 			);
 			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		BFA54F4D2A557B80009FB460 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F4E2A557B9E009FB460 /* PreferencesVC.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		BFA54F502A557C09009FB460 /* Support&Live chat */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F512A557C3A009FB460 /* Support&Live chatVC.swift */,
+			);
+			path = "Support&Live chat";
+			sourceTree = "<group>";
+		};
+		BFA54F532A557C46009FB460 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F542A557C58009FB460 /* FeedbackVC.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		BFA54F562A557C5E009FB460 /* Recommend an Outlet */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F572A557C8E009FB460 /* Recommend an OutletVC.swift */,
+			);
+			path = "Recommend an Outlet";
+			sourceTree = "<group>";
+		};
+		BFA54F592A557CA0009FB460 /* Report an Outlet */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F5A2A557CBE009FB460 /* Report an OutletVC.swift */,
+			);
+			path = "Report an Outlet";
+			sourceTree = "<group>";
+		};
+		BFA54F5C2A557CC8009FB460 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F5D2A557CD8009FB460 /* About The App */,
+				BFA54F5E2A557CE5009FB460 /* Privacy Policy */,
+				BFA54F5F2A557CF7009FB460 /* Terms of Use */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		BFA54F5D2A557CD8009FB460 /* About The App */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F602A557D3F009FB460 /* About The AppVC.swift */,
+			);
+			path = "About The App";
+			sourceTree = "<group>";
+		};
+		BFA54F5E2A557CE5009FB460 /* Privacy Policy */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F622A557D50009FB460 /* Privacy Policy.swift */,
+			);
+			path = "Privacy Policy";
+			sourceTree = "<group>";
+		};
+		BFA54F5F2A557CF7009FB460 /* Terms of Use */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F642A557D64009FB460 /* Terms of Use.swift */,
+			);
+			path = "Terms of Use";
+			sourceTree = "<group>";
+		};
+		BFA54F662A55A776009FB460 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BFA54F672A55A787009FB460 /* TabbarVC.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,16 +510,26 @@
 			files = (
 				BF9C67852A546101008CC131 /* UILabel+Extension.swift in Sources */,
 				BF9C67932A546236008CC131 /* RedemptionsVC.swift in Sources */,
+				BFA54F652A557D64009FB460 /* Terms of Use.swift in Sources */,
+				BFA54F4F2A557B9E009FB460 /* PreferencesVC.swift in Sources */,
 				BF9C67962A5462A2008CC131 /* GiftsVC.swift in Sources */,
 				BF9C678A2A546188008CC131 /* HomeVC.swift in Sources */,
-				BF9C67462A542245008CC131 /* ViewController.swift in Sources */,
+				BFA54F6A2A55B827009FB460 /* UIController+Extension.swift in Sources */,
+				BFA54F522A557C3A009FB460 /* Support&Live chatVC.swift in Sources */,
 				BF9C67422A542245008CC131 /* AppDelegate.swift in Sources */,
+				BFA54F612A557D3F009FB460 /* About The AppVC.swift in Sources */,
+				BFA54F552A557C58009FB460 /* FeedbackVC.swift in Sources */,
 				BF9C67872A546114008CC131 /* UIImage+Extension.swift in Sources */,
 				BF9C67902A5461D8008CC131 /* SplashVC.swift in Sources */,
 				BF9C67832A5460D7008CC131 /* UITextField+Extension.swift in Sources */,
+				BFA54F5B2A557CBE009FB460 /* Report an OutletVC.swift in Sources */,
 				BF9C67782A5425B4008CC131 /* anchors.swift in Sources */,
+				BFA54F582A557C8E009FB460 /* Recommend an OutletVC.swift in Sources */,
 				BF9C677A2A544C34008CC131 /* constants.swift in Sources */,
+				BFA54F632A557D50009FB460 /* Privacy Policy.swift in Sources */,
+				BFA54F682A55A787009FB460 /* TabbarVC.swift in Sources */,
 				BF9C67442A542245008CC131 /* SceneDelegate.swift in Sources */,
+				BFA54F4C2A557B71009FB460 /* MyProfileVC.swift in Sources */,
 				BF9C67812A545C76008CC131 /* UIButton+Extension.swift in Sources */,
 				BF9C678D2A5461A8008CC131 /* FavouritesVC.swift in Sources */,
 				BF9C67992A5462CD008CC131 /* SettingVC.swift in Sources */,
