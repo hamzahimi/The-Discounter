@@ -15,6 +15,7 @@ class HomeVC: UIViewController {
         view.backgroundColor = .yellow
         inilization()
         configueUI()
+        navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
     func inilization(){

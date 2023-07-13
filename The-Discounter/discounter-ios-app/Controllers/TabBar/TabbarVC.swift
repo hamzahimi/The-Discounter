@@ -7,7 +7,7 @@ class tabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         viewControllers = [
                         createNavController(ViewController: HomeVC(),title:"HOME", imageName: "home_normal"),
                         createNavController(ViewController:FavouritesVC(),title:"FAVOURITES", imageName: "star_normal"),

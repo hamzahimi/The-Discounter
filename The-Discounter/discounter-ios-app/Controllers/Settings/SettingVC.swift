@@ -129,7 +129,7 @@ extension SettingVC {
         
         switch indexPath.row {
         case 0:
-            self.pushTo(viewController: MyProfileVC())
+            pushTo(viewController: MyProfileVC())
             break
         case 1:
            // pushToPreference()

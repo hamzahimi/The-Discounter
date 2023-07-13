@@ -17,7 +17,7 @@ class MyProfileVC: UIViewController {
     var contentView_Scroll : UIView?
     var profileContent: UIView?
     var imgProfile : UIImageView?
-  
+    var btnBack : disCounterButton?
     let scrollView = UIScrollView()
    
    
@@ -43,18 +43,19 @@ class MyProfileVC: UIViewController {
             return contentview
         }()
         
-        
-        
-        
+        btnBack = disCounterButton(image: UIImage(named: "back"), backgroundColor: .clear, cornerRadius:  0.0, borderColor: .clear, borderWidth:  0.0, imageSize: .init(width: 40, height: 40))
     }
     
     func configueUI(){
         inilization()
         configScrollView()
-        view.addMultipleSubViews(views: lblTittle!,contentView_Scroll!)
+        view.addMultipleSubViews(views: lblTittle!,contentView_Scroll!,btnBack!)
         
         
         lblTittle?.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor,padding: .init(top: 10, left: 8, bottom: 0, right: 8))
+        
+        btnBack?.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil,padding: .init(top: 0, left: 8, bottom: 0, right: 0),size: .init(width: 42, height: 42))
+       
         contentView_Scroll?.anchor(top: lblTittle?.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor,padding: .init(top: 10, left: 0, bottom: 0, right: 0))
         
         contentView?.addMultipleSubViews(views: profileContent!)
@@ -63,7 +64,7 @@ class MyProfileVC: UIViewController {
 
         profileContent?.centerXInSuperview()
 
-         
+        btnBack?.addTarget(self, action: #selector(onTap(_:)), for: .touchUpInside)
     }
     
     
@@ -79,5 +80,9 @@ class MyProfileVC: UIViewController {
             scrollView.showsVerticalScrollIndicator = false
         }
     
-
+    
+    @objc private func onTap(_ sender: UIButton){
+      print("Back Press")
+        navigationController?.popViewController(animated: true)
+    }
 }
