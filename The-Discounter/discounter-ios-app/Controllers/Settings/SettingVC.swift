@@ -31,6 +31,19 @@ class SettingVC: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+           hidesBottomBarWhenPushed = true
+        
+     
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+           hidesBottomBarWhenPushed = false
+       
+    }
+    
     func inilization(){
         lblTittle = UILabel(title: "Setting", fontColor: appColor.whiteColor, alignment: .center, numberOfLines: 1, font: UIFont.appBoldFont(size: 18.0))
         contentView = UIView(backgroundColor: appColor.whiteColor)
@@ -125,10 +138,9 @@ extension SettingVC: UITableViewDataSource, UITableViewDelegate {
 extension SettingVC {
     
     func SettingsOptionsEvent(indexPath : IndexPath) {
-        
-        
-        switch indexPath.row {
+       switch indexPath.row {
         case 0:
+         
             pushTo(viewController: MyProfileVC())
             break
         case 1:

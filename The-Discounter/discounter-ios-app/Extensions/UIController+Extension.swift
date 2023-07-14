@@ -12,7 +12,7 @@ extension UIViewController{
     
     public func pushTo(viewController: UIViewController, animated: Bool = true){
         
-            hidesBottomBarWhenPushed = true
+           // hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: animated)
     }
     

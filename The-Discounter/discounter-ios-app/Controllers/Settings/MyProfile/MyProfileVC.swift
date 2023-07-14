@@ -19,7 +19,7 @@ class MyProfileVC: UIViewController {
     var imgProfile : UIImageView?
     var btnBack : disCounterButton?
     let scrollView = UIScrollView()
-   
+    var txtName : discounterTextField?
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,10 @@ class MyProfileVC: UIViewController {
       
         // Do any additional setup after loading the view.
     }
+    
+ 
+    
+    
     func inilization(){
         lblTittle = UILabel(title: "My Profile", fontColor: appColor.whiteColor, alignment: .center, numberOfLines: 1, font: UIFont.appBoldFont(size: 18.0))
         contentView = UIView(backgroundColor: appColor.whiteColor)
@@ -44,13 +48,17 @@ class MyProfileVC: UIViewController {
         }()
         
         btnBack = disCounterButton(image: UIImage(named: "back"), backgroundColor: .clear, cornerRadius:  0.0, borderColor: .clear, borderWidth:  0.0, imageSize: .init(width: 40, height: 40))
+        txtName = discounterTextField(PlaceHolder: "User Name",font: UIFont.appBoldFont(size: 18.0),borderWidth: 1)
+        
+//        (borderColor: appColor.textColour as! CGColor)
     }
     
     func configueUI(){
         inilization()
-        configScrollView()
         view.addMultipleSubViews(views: lblTittle!,contentView_Scroll!,btnBack!)
-        
+      
+        configScrollView()
+       
         
         lblTittle?.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor,padding: .init(top: 10, left: 8, bottom: 0, right: 8))
         
@@ -58,13 +66,16 @@ class MyProfileVC: UIViewController {
        
         contentView_Scroll?.anchor(top: lblTittle?.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor,padding: .init(top: 10, left: 0, bottom: 0, right: 0))
         
-        contentView?.addMultipleSubViews(views: profileContent!)
+        contentView?.addMultipleSubViews(views: profileContent!, txtName!)
 //
         profileContent?.anchor(top: contentView?.topAnchor, leading: nil, bottom: nil, trailing: nil,padding: .init(top: 50, left: 0, bottom: 0, right: 0),size: .init(width: 100, height: 100))
 
         profileContent?.centerXInSuperview()
 
         btnBack?.addTarget(self, action: #selector(onTap(_:)), for: .touchUpInside)
+        
+         txtName?.anchor(top: profileContent?.bottomAnchor, leading: contentView?.leadingAnchor, bottom: contentView?.bottomAnchor, trailing: contentView?.trailingAnchor,padding: .init(top: 7, left: 7, bottom: 7, right: 7),size: .init(width: 0, height: 40))
+       
     }
     
     
@@ -83,6 +94,8 @@ class MyProfileVC: UIViewController {
     
     @objc private func onTap(_ sender: UIButton){
       print("Back Press")
-        navigationController?.popViewController(animated: true)
+       navigationController?.popViewController(animated: true)
+      //  hidesBottomBarWhenPushed = false
+       
     }
 }
